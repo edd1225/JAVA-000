@@ -601,11 +601,11 @@ Hello Class Initialized!
 
 
 
-![image-2](./README.assets/Java class文件结构.png)
+![image-Java class文件结构](./README.assets/Java class文件结构.png)
 
 jvm文档整理
 
-[整理 jvm资料](整理 jvm资料.md)
+[整理 jvm资料](https://github.com/edd1225/JAVA-000/blob/main/Week_01/%E6%95%B4%E7%90%86%20jvm%E8%B5%84%E6%96%99.md)
 
 包括 
 
