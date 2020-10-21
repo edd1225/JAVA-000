@@ -601,3 +601,21 @@ Hello Class Initialized!
 
 
 
+![image-2](./README.assets/Java class文件结构.png)
+
+jvm文档整理
+
+[整理 jvm资料](整理 jvm资料.md)
+
+包括 
+
+```
+Java class文件结构（规范篇）
+class文件结构与格式 ------- 思维导图
+JVM优化之 -Xss -Xms -Xmx -Xmn 参数设置
+```
+
+
+
+
+
