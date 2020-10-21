@@ -601,7 +601,11 @@ Hello Class Initialized!
 
 
 
-![image-Java class文件结构](./README.assets/Java class文件结构.png)
+#资料整理
+
+class文件结构与格式 ------- 思维导图
+
+![Java class文件结构](./README.assets/Java class文件结构.png)
 
 jvm文档整理
 
