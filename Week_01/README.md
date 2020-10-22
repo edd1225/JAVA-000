@@ -286,21 +286,20 @@ SourceFile: "HelloByteCode.java"
 
 ## 自定义加载器 Classloader
 
-###1.加载的一个Hello类：1 package jvm; 
+###1.加载的一个Hello类：
 
 ```java
- 
-
+package jvm; 
 public class Hello { 
-		static { 
- 			System.out.println("Hello Class Initialized!"); 
-		} 
- } 
+static { 
+ 	System.out.println("Hello Class Initialized!"); 
+	} 
+} 
 ```
 
 ###2. HelloClassLoader
-```
-###package jvm; 
+```java
+package jvm; 
 
 import java.util.Base64; 
 
@@ -309,19 +308,12 @@ public class HelloClassLoader extends ClassLoader {
 	public static void main(String[] args) { 
 
 	try { 
-
       new HelloClassLoader().findClass("jvm.Hello").newInstance(); // 加载并初始化Hello类 
-
 	 } catch (ClassNotFoundException e) { 
-
  		e.printStackTrace(); 
-
  	} catch (IllegalAccessException e) { 
-
  		e.printStackTrace(); 
-
 	} catch (InstantiationException e) { 
-
  		e.printStackTrace(); 
  	} 
 } 
@@ -337,7 +329,7 @@ String helloBase64="yv66vgAAADQAHwoABgARCQASABMIABQKABUAFgcAFwcAGAEABjxpbml0PgEA
 "IACgABAAkAAAAvAAEAAQAAAAUqtwABsQAAAAIACgAAAAYAAQAAAAMACwAAAAwAAQAAAAUADAANAAAACAAOAAgAAQAJAAAAJQ"; 
 
 		byte[] bytes = decode(helloBase64); 
-		return defineClass(name,bytes,0,bytes.length); 
+		 return defineClass(name,bytes,0,bytes.length); 
 	} 
 		public byte[] decode(String base64){ 
 		return Base64.getDecoder().decode(base64); 
@@ -470,43 +462,43 @@ public static void main(String[] args) {
 
 ```
 
-1 $ java ‐XX:+TraceClassLoading jvm.HelloClassLoader 
+ java ‐XX:+TraceClassLoading jvm.HelloClassLoader 
 
-2 [Opened D:\Program Files\Java\jre1.8.0_231\lib\rt.jar] 
+[Opened D:\Program Files\Java\jre1.8.0_231\lib\rt.jar] 
 
-3 [Loaded java.lang.Object from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
+[Loaded java.lang.Object from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
 
-4 [Loaded java.io.Serializable from D:\Program Files\Java\jre1.8.0_231\lib\rt 
+[Loaded java.io.Serializable from D:\Program Files\Java\jre1.8.0_231\lib\rt 
 
-5 [Loaded java.lang.Comparable from D:\Program Files\Java\jre1.8.0_231\lib\rt 
+[Loaded java.lang.Comparable from D:\Program Files\Java\jre1.8.0_231\lib\rt 
 
-6 [Loaded java.lang.CharSequence from D:\Program Files\Java\jre1.8.0_231\lib 
+[Loaded java.lang.CharSequence from D:\Program Files\Java\jre1.8.0_231\lib 
 
-7 [Loaded java.lang.String from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
+[Loaded java.lang.String from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
 
-8 [Loaded java.lang.reflect.AnnotatedElement from D:\Program Files\Java\jre19 [Loaded java.lang.reflect.GenericDeclaration from D:\Program Files\Java\jre1 
+[Loaded java.lang.reflect.AnnotatedElement from D:\Program Files\Java\jre19 [Loaded java.lang.reflect.GenericDeclaration from D:\Program Files\Java\jre1 
 
-10 [Loaded java.lang.reflect.Type from D:\Program Files\Java\jre1.8.0_231\lib 
+[Loaded java.lang.reflect.Type from D:\Program Files\Java\jre1.8.0_231\lib 
 
-11 [Loaded java.lang.Class from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
+[Loaded java.lang.Class from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
 
-12 [Loaded java.lang.Cloneable from D:\Program Files\Java\jre1.8.0_231\lib\rt 
+[Loaded java.lang.Cloneable from D:\Program Files\Java\jre1.8.0_231\lib\rt 
 
-13 [Loaded java.lang.ClassLoader from D:\Program Files\Java\jre1.8.0_231\lib\ 
+[Loaded java.lang.ClassLoader from D:\Program Files\Java\jre1.8.0_231\lib\ 
 
-14 [Loaded java.lang.System from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
+[Loaded java.lang.System from D:\Program Files\Java\jre1.8.0_231\lib\rt.jar 
 
-15 // ....... 此处省略了100多条类加载信息 
+// ....... 此处省略了100多条类加载信息 
 
-16 [Loaded jvm.Hello from __JVM_DefineClass__] 
+[Loaded jvm.Hello from __JVM_DefineClass__] 
 
-17 [Loaded java.util.concurrent.ConcurrentHashMap$ForwardingNode from D:\Program 
+[Loaded java.util.concurrent.ConcurrentHashMap$ForwardingNode from D:\Program 
 
-18 Hello Class Initialized! 
+Hello Class Initialized! 
 
-19 [Loaded java.lang.Shutdown from D:\Program Files\Java\jre1.8.0_231\lib\rt. 
+[Loaded java.lang.Shutdown from D:\Program Files\Java\jre1.8.0_231\lib\rt. 
 
-20 [Loaded java.lang.Shutdown$Lock from D:\Program Files\Java\jre1.8.0_231\lib 
+[Loaded java.lang.Shutdown$Lock from D:\Program Files\Java\jre1.8.0_231\lib 
 ```
 
 上面的信息，可以很清楚的看到类的加载先后顺序，以及是从哪个jar里加载的，这样排查类加载的问题非常方便。 
@@ -609,9 +601,7 @@ class文件结构与格式 ------- 思维导图
 
 jvm文档整理
 
-[整理 jvm资料](https://github.com/edd1225/JAVA-000/blob/main/Week_01/%E6%95%B4%E7%90%86%20jvm%E8%B5%84%E6%96%99.md)
-
-包括 
+[整理 jvm资料](https://github.com/edd1225/JAVA-000/blob/main/Week_01/%E6%95%B4%E7%90%86%20jvm%E8%B5%84%E6%96%99.md) 包括 
 
 ```
 Java class文件结构（规范篇）
