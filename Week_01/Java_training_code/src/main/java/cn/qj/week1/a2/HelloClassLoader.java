@@ -41,11 +41,13 @@ public class HelloClassLoader extends ClassLoader {
 
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
+        String filename="/Users/qianjiang/tmp/JAVA-000/Week_01/Java_training_code/src/main/java/cn/qj/week1/a2/Hello.xlass";
+        String filePath = this.getClass().getResource(filename).getPath();
 
-        String filePath = this.getClass().getResource("Hello.xlass").getPath();
+
         System.out.println("加载xlass路径： "+filePath);
 
-        File file = new File(filePath);
+        File file = new File(filename);
         //
         int length = (int) file.length();
         //一次性将文件中的值都放入缓冲中
