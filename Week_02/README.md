@@ -2,9 +2,10 @@
 
 
 
-- 第二周作业：[作业](https://github.com/lw1243925457/JAVA-000/blob/main/Week_02/作业.md)
-- [NIO相关学习记录](https://github.com/lw1243925457/JAVA-000/blob/main/Week_02/NIO相关知识学习总结.md)
-- [Netty学习总结](https://github.com/lw1243925457/JAVA-000/blob/main/Week_02/Netty学习总结.md)
+- 第二周作业：[作业](https://github.com/edd1225/JAVA-000/blob/main/Week_02/Learning_notes/HOMEWORK.md)
+- [GC 日志解读与分析]
+- [NIO相关学习记录]
+- [Netty学习总结]
 
 ##1. GC 日志解读与分析
 
