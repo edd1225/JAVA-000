@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48b6222-488c-4c30-b0e3-b4de5e5ddda5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_70.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_70.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week2/GCLogAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week2/HttpServer01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week2/OkHttpDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_training_code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java_training_code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week1/a2/HelloClassLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/qj/week1/a2/HelloClassLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_02/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="d48b6222-488c-4c30-b0e3-b4de5e5ddda5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,7 +216,7 @@
       <workItem from="1603088488420" duration="729000" />
       <workItem from="1603089226746" duration="4979000" />
       <workItem from="1603288973223" duration="4042000" />
-      <workItem from="1603850095166" duration="7596000" />
+      <workItem from="1603850095166" duration="8439000" />
     </task>
     <servers />
   </component>

@@ -298,7 +298,7 @@ Heap
   class space    used 294K, capacity 386K, committed 512K, reserved 1048576K
 ```
 
-8G堆内存 串行GC日志：
+###8G堆内存 串行GC日志：
 
 ```
 Learning_notes (main) ✗ java -XX:+UseSerialGC -Xms8g -Xmx8g -XX:+PrintGCDetails -XX:+PrintGCDateStamps  GCLogAnalysis
@@ -1561,18 +1561,18 @@ MacBook Pro (15-inch, Late 2016)
 
 cpu : 2.7 GHz 四核Intel Core i7
 
-内存:16g÷
+内存:16g
 
 ##统计结果
 
-| 内存     | 串行GC                       | 并行GC                       | CMS GC                       | G1 GC                        |
-| -------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
-| **256m** | OOM                          | OOM                          | OOM                          | OOM                          |
-| 512m     | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
-| 1g       | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
-| 2g       | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
-| 4g       | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
-| 8g       | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
+| 内存     | 串行GC                              | 并行GC                       | CMS GC                       | G1 GC                        |
+| -------- | ----------------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
+| **256m** | 9次YGC 17次FULL GC /生成对象4334    | OOM                          | OOM                          | OOM                          |
+| 512m     | 14次YGC 0次FULL GC /生成对象 7336   | 26次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
+| 1g       | 9次YGC  0次FULL GC /生成对象 9403   | 13次YGC 3次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
+| 2g       | 5次YGC  0次FULL GC /生成对象  10520 | 5次YGC 0次FULL GC /生成对象  | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
+| 4g       | 2次YGC 0次FULL GC /生成对象8428     | 2次YGC 0次FULL GC /生成对象  | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
+| 8g       | 0次YGC 0次FULL GC /生成对象 6357    | 0次YGC 0次FULL GC /生成对象  | 17次YGC 8次FULL GC /生成对象 | 17次YGC 8次FULL GC /生成对象 |
 
 ### 结果分析
 
@@ -1589,6 +1589,49 @@ cpu : 2.7 GHz 四核Intel Core i7
 ## 作业五
 
     写一段代码，使用 HttpClient 或 OkHttp 访问[http://localhost:8801，代码提交到](http://localhost:8801，代码提交到/) github
+
+先运行 [HttpServer01.java](https://github.com/edd1225/JAVA-000/blob/main/Week_01/Java_training_code/src/main/java/cn/qj/week2/HttpServer01.java)
+
+```java
+package cn.qj.week2;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ *
+ */
+public class HttpServer01 {
+    public static void main(String[] args) throws IOException{
+        ServerSocket serverSocket = new ServerSocket(8801);
+        while (true) {
+            try {
+                Socket socket = serverSocket.accept();
+                service(socket);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    
+    private static void service(Socket socket) {
+        try {
+            Thread.sleep(20);
+            PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
+            printWriter.println("HTTP/1.1 200 OK");
+            printWriter.println("Content-Type:text/html;charset=utf-8");
+            printWriter.println();
+            printWriter.write("hello,nio");
+            printWriter.close();
+            socket.close();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
     这里使用OKHttp
 
@@ -1636,4 +1679,8 @@ public class OkHttpDemo {
 ```
 
     返回结果：
+
+```
+hello,nio
+```
 
