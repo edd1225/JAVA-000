@@ -2,7 +2,7 @@
 
 
 
-##gateway 作业
+## gateway 作业
 
 1 自定义handler ： SyncHttpOutboundHandler 用httpclient 实现调用接口
 
@@ -14,13 +14,13 @@
 
 4 在server中，（HelloController类）获取header中自定义参数
 
-##网关架构
+## 网关架构
 
 网关大体模块结构如下图：
 
 ![image-20201104155932569](./README.assets/image-20201104155932569.png)
 
-## 功能简介
+##  功能简介
 
     目前系统分为三个模块：server模块、route模块、client模块
 
@@ -35,7 +35,7 @@
 
 
 
-##启动方式
+## 启动方式
 
 运行主要类
 
@@ -51,13 +51,13 @@ cn.qj.week3.gateway.server.NettyServerApp;
 sb -u http://localhost:8808/test -c 20 -N 120
 ```
 
-##工程结构
+## 工程结构
 
 client：此模块负责将请求目标服务
 
 server：负责接收用户请求
 
-##代码思路大致如下
+## 代码思路大致如下ßß
 
 
 
