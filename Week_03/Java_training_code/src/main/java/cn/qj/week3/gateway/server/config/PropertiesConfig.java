@@ -11,13 +11,13 @@ import java.util.*;
  *  @Date 2020/11/03 上午
  *
  */
-public class PropertiesSingletonConfig {
+public class PropertiesConfig {
 
     private String port;
 
     private Map<String, String[]> router;
 
-    private static PropertiesSingletonConfig singletonConfig = null;
+    private static PropertiesConfig singletonConfig = null;
 
     private static final String DEFAULT_PORT = "8888";
 
@@ -33,7 +33,7 @@ public class PropertiesSingletonConfig {
      */
     private static final String PREFIX_ROUTER = "router";
 
-    private PropertiesSingletonConfig(String port, Map<String, String[]> router) {
+    private PropertiesConfig(String port, Map<String, String[]> router) {
         this.port = port;
         this.router = router;
     }
@@ -47,13 +47,13 @@ public class PropertiesSingletonConfig {
     }
 
 
-    public static PropertiesSingletonConfig getInstance(String propertiesPath){
+    public static PropertiesConfig getInstance(String propertiesPath){
         if (singletonConfig == null){
             Map<String, String[]> routerMap = new HashMap<>();
             if (propertiesPath == null){
                 return defaultBean(routerMap);
             }
-            try (InputStream inputStream = PropertiesSingletonConfig.class.getResourceAsStream(propertiesPath)){
+            try (InputStream inputStream = PropertiesConfig.class.getResourceAsStream(propertiesPath)){
                 if (inputStream == null){
                     return defaultBean(routerMap);
                 }
@@ -72,7 +72,7 @@ public class PropertiesSingletonConfig {
                     }
                 }
                 //加载配置文件
-                singletonConfig = new PropertiesSingletonConfig(port, routerMap);
+                singletonConfig = new PropertiesConfig(port, routerMap);
                 return singletonConfig;
             } catch (IOException e) {
                 e.printStackTrace();
@@ -87,8 +87,8 @@ public class PropertiesSingletonConfig {
      * @param routerMap 允许为 Null
      * @return
      */
-    private static PropertiesSingletonConfig defaultBean(Map<String, String[]> routerMap){
+    private static PropertiesConfig defaultBean(Map<String, String[]> routerMap){
         Map<String, String[]> defaultMap = Optional.of(routerMap).orElse(new HashMap<>());
-        return new PropertiesSingletonConfig(DEFAULT_PORT, defaultMap);
+        return new PropertiesConfig(DEFAULT_PORT, defaultMap);
     }
 }

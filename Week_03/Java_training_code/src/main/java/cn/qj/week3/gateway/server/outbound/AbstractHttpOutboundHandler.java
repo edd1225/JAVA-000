@@ -1,8 +1,9 @@
-package homework.netty.gateway.server.outbound;
+package cn.qj.week3.gateway.server.outbound;
 
-import homework.netty.gateway.server.config.PropertiesSingletonConfig;
-import homework.netty.gateway.server.router.HttpEndpointRouter;
-import homework.two.HttpClient;
+import cn.qj.week3.gateway.server.NettyServerApp;
+import cn.qj.week3.gateway.server.config.PropertiesConfig;
+import cn.qj.week3.gateway.server.router.HttpEndpointRouter;
+import cn.qj.week3.gateway.server.uitls.HttpClient;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -16,14 +17,13 @@ import java.util.Map;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import static homework.netty.gateway.server.NettyServerApplication.PROPERTIES_PATH;
 import static io.netty.handler.codec.http.HttpResponseStatus.NOT_FOUND;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 /**
  * HttpOutboundHandler
  *
- * @author qrXun on 2020/11/4
+ * @author  qianjiang on 2020/11/4
  */
 public abstract class AbstractHttpOutboundHandler<T> {
 
@@ -45,7 +45,7 @@ public abstract class AbstractHttpOutboundHandler<T> {
     public abstract void handle(final FullHttpRequest fullHttpRequest, final ChannelHandlerContext ctx);
 
     public void handle(final FullHttpRequest fullHttpRequest, final ChannelHandlerContext ctx, Consumer<T> responseConsumer){
-        PropertiesSingletonConfig config = PropertiesSingletonConfig.getInstance(PROPERTIES_PATH);
+        PropertiesConfig config = PropertiesConfig.getInstance(NettyServerApp.PROPERTIES_PATH);
         final String uri = fullHttpRequest.uri();
         String[] uriArray = uri.split("/");
         String endUri = uriArray[uriArray.length - 1].split("\\?")[0];

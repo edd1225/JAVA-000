@@ -1,4 +1,4 @@
-package homework.netty.gateway.client;
+package cn.qj.week3.gateway.client;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import io.netty.channel.ChannelHandlerContext;
@@ -19,7 +19,7 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 /**
  * HttpClientInboundHandler
  *
- * @author qrXun on 2020/10/31
+ * @author qianjiang on 2020/10/31
  */
 public class HttpClientInboundHandler extends ChannelInboundHandlerAdapter {
 
@@ -35,7 +35,7 @@ public class HttpClientInboundHandler extends ChannelInboundHandlerAdapter {
     private static ExecutorService proxyService = new ThreadPoolExecutor(
             Runtime.getRuntime().availableProcessors() * 2, Runtime.getRuntime().availableProcessors() * 2,
             1000, TimeUnit.MICROSECONDS, new ArrayBlockingQueue<>(2048),
-            new ThreadFactoryBuilder().setNameFormat("qrxun-pool-%d").build());
+            new ThreadFactoryBuilder().setNameFormat("qianj-pool-%d").build());
 
     public HttpClientInboundHandler(String uri, Map<String, String> headersMap, Consumer<FullHttpResponse> consumer) {
         this.uri = uri;

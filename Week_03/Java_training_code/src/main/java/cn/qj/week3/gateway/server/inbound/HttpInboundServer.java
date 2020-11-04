@@ -1,6 +1,6 @@
-package homework.netty.gateway.server.inbound;
+package cn.qj.week3.gateway.server.inbound;
 
-import homework.netty.gateway.server.config.PropertiesSingletonConfig;
+import cn.qj.week3.gateway.server.config.PropertiesConfig;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.Channel;
@@ -13,11 +13,11 @@ import io.netty.handler.logging.LoggingHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
- * HttpInboundServer
  *
- * @author qrXun on 2020/10/30
+ *  @Author edd1225(qianjiang)
+ *  @Date 2020/11/03 上午
+ *
  */
 public class HttpInboundServer {
 
@@ -57,7 +57,7 @@ public class HttpInboundServer {
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
                     .childHandler(new HttpInboundInitializer());
-            PropertiesSingletonConfig config = PropertiesSingletonConfig.getInstance(propertiesPath);
+            PropertiesConfig config = PropertiesConfig.getInstance(propertiesPath);
             Channel ch = serverBootstrap.bind(Integer.parseInt(config.getPort())).sync().channel();
             logger.info("开启netty http服务器，监听地址和端口为 http://127.0.0.1:" + config.getPort() + '/');
             ch.closeFuture().sync();

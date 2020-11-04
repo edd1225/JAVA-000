@@ -1,8 +1,8 @@
-package cn.qj.week3.gateway.uitls;
+package cn.qj.week3.gateway.server.uitls;
 
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
-
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -25,7 +25,7 @@ public class OKHttpUtil implements HttpClient<Response>{
     private static final ExecutorService proxyService = new ThreadPoolExecutor(
             Runtime.getRuntime().availableProcessors() * 2, Runtime.getRuntime().availableProcessors() * 2,
             1000, TimeUnit.MICROSECONDS, new ArrayBlockingQueue<>(2048),
-            new ThreadFactoryBuilder().setNameFormat("qrxun-pool-%d").build());
+            new ThreadFactoryBuilder().setNameFormat("qianj-pool-%d").build());
 
     /**
      * 同步请求

@@ -6,9 +6,9 @@ import io.netty.util.CharsetUtil;
 /**
  * Test
  *
- * @author qrXun on 2020/11/2
+ * @author qianjiang on 2020/11/2
  */
-public class Test {
+public class ClientTest {
 
     public static void main(String[] args) {
         NettyHttpClient client = new NettyHttpClient();

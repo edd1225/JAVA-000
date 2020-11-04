@@ -1,16 +1,17 @@
-package homework.netty.gateway.server.inbound;
+package cn.qj.week3.gateway.server.inbound;
 
-import homework.netty.gateway.server.filter.HttpRequestFilter;
-import homework.netty.gateway.server.outbound.AbstractHttpOutboundHandler;
+import cn.qj.week3.gateway.server.filter.HttpRequestFilter;
+import cn.qj.week3.gateway.server.outbound.AbstractHttpOutboundHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.util.ReferenceCountUtil;
 
 /**
- * HttpInboundHandler
  *
- * @author qrXun on 2020/10/30
+ *  @Author edd1225(qianjiang)
+ *  @Date 2020/11/03 上午
+ *
  */
 public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
 

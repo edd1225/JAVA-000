@@ -1,7 +1,7 @@
-package homework.netty.gateway.server.outbound;
+package cn.qj.week3.gateway.server.outbound;
 
-import homework.netty.gateway.server.router.HttpEndpointRouter;
-import homework.two.OKHttpUtil;
+import cn.qj.week3.gateway.server.router.HttpEndpointRouter;
+import cn.qj.week3.gateway.server.uitls.OKHttpUtil;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -18,7 +18,7 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 /**
  * OkHttpOutboundHandler
  *
- * @author qrXun on 2020/10/30
+ * @author qianjiang on 2020/10/30
  */
 public class OkHttpOutboundHandler extends AbstractHttpOutboundHandler<Response> {
 
@@ -48,7 +48,6 @@ public class OkHttpOutboundHandler extends AbstractHttpOutboundHandler<Response>
                 ctx.flush();
             }
         });
-//        nettyClientDeal(this.backendUrl, fullHttpRequest.uri(), fullHttpResponse,fullHttpRequest, ctx);
 
     }
 }

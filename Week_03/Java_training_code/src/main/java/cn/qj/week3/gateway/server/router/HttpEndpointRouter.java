@@ -1,9 +1,9 @@
-package homework.netty.gateway.server.router;
+package cn.qj.week3.gateway.server.router;
 
 /**
- * HttpEndpointRouter
  *
- * @author qrXun on 2020/11/3
+ *
+ * @author qianjiang on 2020/11/3
  */
 public interface HttpEndpointRouter {
 

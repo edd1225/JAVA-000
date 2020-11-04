@@ -1,18 +1,18 @@
-package homework.netty.gateway.server.inbound;
+package cn.qj.week3.gateway.server.inbound;
 
-import homework.netty.gateway.server.filter.HttpRequestFilterHandler;
-import homework.netty.gateway.server.outbound.OkHttpOutboundHandler;
-import homework.netty.gateway.server.router.RandomHttpEndPointRouter;
+import cn.qj.week3.gateway.server.filter.HttpRequestFilterHandler;
+import cn.qj.week3.gateway.server.outbound.OkHttpOutboundHandler;
+import cn.qj.week3.gateway.server.router.RandomHttpEndPointRouter;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
-
 /**
- * HttpInboundInitializer
  *
- * @author qrXun on 2020/10/30
+ *  @Author edd1225(qianjiang)
+ *  @Date 2020/11/03 上午
+ *
  */
 public class HttpInboundInitializer extends ChannelInitializer<SocketChannel> {
 
@@ -23,9 +23,11 @@ public class HttpInboundInitializer extends ChannelInitializer<SocketChannel> {
                 new HttpServerCodec(),
                 new HttpObjectAggregator(1024 * 1024),
                 new HttpInboundHandler(
+                       // new SubReqClientHandler()
                         //new NettyHttpOutboundHandler(new RandomHttpEndPointRouter()),
                         new OkHttpOutboundHandler(new RandomHttpEndPointRouter()),
                         new HttpRequestFilterHandler()
+
                 )
         );
     }

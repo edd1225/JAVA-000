@@ -1,4 +1,4 @@
-package homework.netty.gateway.server.router;
+package cn.qj.week3.gateway.server.router;
 
 import java.util.Random;
 
@@ -8,7 +8,7 @@ import java.util.Random;
  * 随机路由
  * 随机获取实际后台服务地址
  *
- * @author qrXun on 2020/11/3
+ * @author qianjiang on 2020/11/3
  */
 public class RandomHttpEndPointRouter implements HttpEndpointRouter{
 

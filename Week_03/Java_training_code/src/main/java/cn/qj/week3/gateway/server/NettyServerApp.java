@@ -8,10 +8,10 @@ import cn.qj.week3.gateway.server.inbound.HttpInboundServer;
  *
  * Netty 服务端
  *  @Author edd1225(qianjiang)
- *  @Date 2020/11/03 上午
+ *  @Date 2020/11/04 上午
  *
  */
-public class NettyServerApplication {
+public class NettyServerApp {
 
     public final static String PROPERTIES_PATH = "/META-INF/HttpApplication.properties";
 
@@ -23,7 +23,4 @@ public class NettyServerApplication {
             e.printStackTrace();
         }
     }
-
-
-
 }

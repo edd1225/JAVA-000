@@ -1,6 +1,6 @@
-package homework.netty.gateway.client;
+package cn.qj.week3.gateway.client;
 
-import homework.two.HttpClient;
+import cn.qj.week3.gateway.server.uitls.HttpClient;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 /**
  * NettyHttpClient
  *
- * @author qrXun on 2020/10/30
+ * @author qianjiang on 2020/10/31
  */
 public class NettyHttpClient implements HttpClient<FullHttpResponse> {
 

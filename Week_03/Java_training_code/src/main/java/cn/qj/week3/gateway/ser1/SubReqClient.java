@@ -1,4 +1,4 @@
-package cn.qj.week3.gateway.client;
+package cn.qj.week3.gateway.ser1;
 
 import cn.qj.week3.gateway.server.codes.SubReqClientHandler;
 import io.netty.bootstrap.Bootstrap;

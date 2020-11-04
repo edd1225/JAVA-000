@@ -1,7 +1,7 @@
-package homework.netty.gateway.server.outbound;
+package cn.qj.week3.gateway.server.outbound;
 
-import homework.netty.gateway.client.NettyHttpClient;
-import homework.netty.gateway.server.router.HttpEndpointRouter;
+import cn.qj.week3.gateway.server.router.HttpEndpointRouter;
+import cn.qj.week3.gateway.client.NettyHttpClient;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -15,7 +15,7 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 /**
  * NettyHttpOutboundHandler
  *
- * @author qrXun on 2020/11/4
+ * @author qianjiang on 2020/11/4
  */
 public class NettyHttpOutboundHandler extends AbstractHttpOutboundHandler<FullHttpResponse> {
 
