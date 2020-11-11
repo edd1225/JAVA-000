@@ -32,6 +32,7 @@ public class TestCountDownLatchMethod {
     }
 
     private volatile Integer value = null;
+
     private CountDownLatch latch;
 
     public void sum(int num) {

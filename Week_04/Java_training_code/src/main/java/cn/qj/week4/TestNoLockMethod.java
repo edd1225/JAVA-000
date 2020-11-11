@@ -17,7 +17,7 @@ public class TestNoLockMethod {
         // 异步执行 下面方法
         final TestNoLockMethod method = new TestNoLockMethod();
         Thread thread = new Thread(() -> {
-            method.sum(77);
+            method.sum(45);
         });
         thread.start();
 

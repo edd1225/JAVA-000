@@ -6,64 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d48b6222-488c-4c30-b0e3-b4de5e5ddda5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Week_01/Java_training_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_01/Java_training_code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/client/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/client/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/client/HttpClientInboundHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/client/HttpClientInboundHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/client/NettyHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/client/NettyHttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/ser1/SubReqServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/NettyServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/NettyServerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/codes/SubReqClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/codes/SubReqClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/codes/pojo/SubscribeReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/codes/pojo/SubscribeReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/codes/pojo/SubscribeResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/codes/pojo/SubscribeResp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/config/PropertiesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/config/PropertiesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/filter/HttpRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/filter/HttpRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/filter/HttpRequestFilterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/filter/HttpRequestFilterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/inbound/HttpInboundHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/inbound/HttpInboundHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/inbound/HttpInboundInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/inbound/HttpInboundInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/inbound/HttpInboundServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/inbound/HttpInboundServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/outbound/AbstractHttpOutboundHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/outbound/AbstractHttpOutboundHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/outbound/NettyHttpOutboundHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/outbound/NettyHttpOutboundHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/outbound/OkHttpOutboundHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/outbound/OkHttpOutboundHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/router/HttpEndpointRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/router/HttpEndpointRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/router/RandomHttpEndPointRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/router/RandomHttpEndPointRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/uitls/HttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/uitls/HttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/uitls/OKHttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/qj/week3/gateway/server/uitls/OKHttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week1/a1/HelloTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week1/a2/HelloClassLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week2/GCLogAnalysis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week2/HttpServer01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week2/OkHttpDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/client/ClientTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/client/HttpClientInboundHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/client/NettyHttpClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/client/NettyHttpClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/ser1/SubReqClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/ser1/SubReqClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/ser1/SubReqClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/ser1/SubReqServer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/ser1/SubReqServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/ser1/SubReqServerHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/NettyServerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/codes/SubReqClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/codes/pojo/SubscribeReq.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/codes/pojo/SubscribeResp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/config/PropertiesConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/filter/HttpRequestFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/filter/HttpRequestFilterHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/inbound/HttpInboundHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/inbound/HttpInboundInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/inbound/HttpInboundServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/outbound/AbstractHttpOutboundHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/outbound/NettyHttpOutboundHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/outbound/OkHttpOutboundHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/router/HttpEndpointRouter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/router/RandomHttpEndPointRouter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/uitls/HttpClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/uitls/OKHttpUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/qj/week3/gateway/server/uitls/OKHttpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +221,7 @@
       <workItem from="1603089226746" duration="4979000" />
       <workItem from="1603288973223" duration="4042000" />
       <workItem from="1603850095166" duration="9754000" />
-      <workItem from="1604472287444" duration="6068000" />
+      <workItem from="1604472287444" duration="6675000" />
     </task>
     <servers />
   </component>
@@ -303,38 +246,42 @@
       <screen x="58" y="23" width="1862" height="1057" />
     </state>
     <state x="985" y="185" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/58.23.1862.1057@58.23.1862.1057" timestamp="1604479459515" />
-    <state width="1570" height="226" key="GridCell.Tab.0.bottom" timestamp="1604480238548">
+    <state width="1570" height="515" key="GridCell.Tab.0.bottom" timestamp="1604481121339">
       <screen x="58" y="23" width="1862" height="1057" />
     </state>
     <state width="1336" height="445" key="GridCell.Tab.0.bottom/1680.23.1920.1057/58.23.1622.1027@58.23.1622.1027" timestamp="1604412299628" />
     <state width="1808" height="267" key="GridCell.Tab.0.bottom/52.23.1868.1177@52.23.1868.1177" timestamp="1603382769418" />
-    <state width="1570" height="226" key="GridCell.Tab.0.bottom/58.23.1862.1057@58.23.1862.1057" timestamp="1604480238548" />
+    <state width="1570" height="515" key="GridCell.Tab.0.bottom/58.23.1862.1057@58.23.1862.1057" timestamp="1604481121339" />
     <state width="1570" height="610" key="GridCell.Tab.0.bottom/58.23.1862.1177@58.23.1862.1177" timestamp="1604474084460" />
-    <state width="1570" height="226" key="GridCell.Tab.0.center" timestamp="1604480238548">
+    <state width="1570" height="515" key="GridCell.Tab.0.center" timestamp="1604481121338">
       <screen x="58" y="23" width="1862" height="1057" />
     </state>
     <state width="1336" height="445" key="GridCell.Tab.0.center/1680.23.1920.1057/58.23.1622.1027@58.23.1622.1027" timestamp="1604412299628" />
     <state width="1808" height="267" key="GridCell.Tab.0.center/52.23.1868.1177@52.23.1868.1177" timestamp="1603382769417" />
-    <state width="1570" height="226" key="GridCell.Tab.0.center/58.23.1862.1057@58.23.1862.1057" timestamp="1604480238548" />
+    <state width="1570" height="515" key="GridCell.Tab.0.center/58.23.1862.1057@58.23.1862.1057" timestamp="1604481121338" />
     <state width="1570" height="610" key="GridCell.Tab.0.center/58.23.1862.1177@58.23.1862.1177" timestamp="1604474084460" />
-    <state width="1570" height="226" key="GridCell.Tab.0.left" timestamp="1604480238548">
+    <state width="1570" height="515" key="GridCell.Tab.0.left" timestamp="1604481121338">
       <screen x="58" y="23" width="1862" height="1057" />
     </state>
     <state width="1336" height="445" key="GridCell.Tab.0.left/1680.23.1920.1057/58.23.1622.1027@58.23.1622.1027" timestamp="1604412299627" />
     <state width="1808" height="267" key="GridCell.Tab.0.left/52.23.1868.1177@52.23.1868.1177" timestamp="1603382769417" />
-    <state width="1570" height="226" key="GridCell.Tab.0.left/58.23.1862.1057@58.23.1862.1057" timestamp="1604480238548" />
+    <state width="1570" height="515" key="GridCell.Tab.0.left/58.23.1862.1057@58.23.1862.1057" timestamp="1604481121338" />
     <state width="1570" height="610" key="GridCell.Tab.0.left/58.23.1862.1177@58.23.1862.1177" timestamp="1604474084459" />
-    <state width="1570" height="226" key="GridCell.Tab.0.right" timestamp="1604480238548">
+    <state width="1570" height="515" key="GridCell.Tab.0.right" timestamp="1604481121338">
       <screen x="58" y="23" width="1862" height="1057" />
     </state>
     <state width="1336" height="445" key="GridCell.Tab.0.right/1680.23.1920.1057/58.23.1622.1027@58.23.1622.1027" timestamp="1604412299628" />
     <state width="1808" height="267" key="GridCell.Tab.0.right/52.23.1868.1177@52.23.1868.1177" timestamp="1603382769418" />
-    <state width="1570" height="226" key="GridCell.Tab.0.right/58.23.1862.1057@58.23.1862.1057" timestamp="1604480238548" />
+    <state width="1570" height="515" key="GridCell.Tab.0.right/58.23.1862.1057@58.23.1862.1057" timestamp="1604481121338" />
     <state width="1570" height="610" key="GridCell.Tab.0.right/58.23.1862.1177@58.23.1862.1177" timestamp="1604474084460" />
     <state x="548" y="116" key="Maven.ArtifactSearchDialog" timestamp="1604473999111">
       <screen x="58" y="23" width="1862" height="1177" />
     </state>
     <state x="548" y="116" key="Maven.ArtifactSearchDialog/58.23.1862.1177@58.23.1862.1177" timestamp="1604473999111" />
+    <state x="460" y="181" key="NewModule_or_Project.wizard" timestamp="1604481117920">
+      <screen x="58" y="23" width="1862" height="1057" />
+    </state>
+    <state x="460" y="181" key="NewModule_or_Project.wizard/58.23.1862.1057@58.23.1862.1057" timestamp="1604481117920" />
     <state x="467" y="159" key="SettingsEditor" timestamp="1603366662411">
       <screen x="52" y="23" width="1868" height="1177" />
     </state>
@@ -344,5 +291,9 @@
       <screen x="58" y="23" width="1862" height="1177" />
     </state>
     <state x="718" y="228" key="Vcs.Push.Dialog.v2/58.23.1862.1177@58.23.1862.1177" timestamp="1603091118620" />
+    <state x="58" y="124" key="new project wizard" timestamp="1604481092112">
+      <screen x="58" y="23" width="1862" height="1057" />
+    </state>
+    <state x="58" y="124" key="new project wizard/58.23.1862.1057@58.23.1862.1057" timestamp="1604481092112" />
   </component>
 </project>

@@ -33,7 +33,7 @@ public class TestCyclicBarrierMethod {
 
         Thread thread = new Thread(() -> {
             try {
-                method.sum(45);
+                method.sum(77);
             } catch (BrokenBarrierException e) {
                 e.printStackTrace();
             } catch (InterruptedException e) {

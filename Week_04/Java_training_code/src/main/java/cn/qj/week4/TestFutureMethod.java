@@ -39,7 +39,4 @@ public class TestFutureMethod implements Callable<Long> {
     public Long call() throws Exception {
         return sum(45);
     }
-
-
-
 }
