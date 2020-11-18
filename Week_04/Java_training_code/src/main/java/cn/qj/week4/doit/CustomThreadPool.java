@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  * 有点想androidnp 的xmpp代码
  *  @author edd1225
  */
-ß
+
 public class CustomThreadPool extends Thread {
     //    设置min，active，max等参数以及线程池的扩容和缩容技术
     private int min;
