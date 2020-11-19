@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /****
- * 测试
+ * 测试动态代理
  */
 public class DynamicProxyTest {
 
