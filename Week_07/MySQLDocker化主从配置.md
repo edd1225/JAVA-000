@@ -17,8 +17,8 @@ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_ROOT_H
 
 &ensp;&ensp;&ensp;&ensp;其中使用了脚本，自动生成了表和插入数据，下面有脚本链接，可进行点击查看：
 
-- [数据库表初始化脚本](https://github.com/lw1243925457/JAVA-000/blob/main/Week_06/init.sql)
-- [数据库数据插入初始化脚本](https://github.com/lw1243925457/JAVA-000/blob/main/Week_06/fillData1.0.sql)
+- [数据库表初始化脚本](https://github.com/edd1225/JAVA-000/blob/main/Week_06/init.sql)
+- [数据库数据插入初始化脚本](https://github.com/edd1225/JAVA-000/blob/main/Week_06/fillData1.0.sql)
 
 ### 数据导入导出
 &ensp;&ensp;&ensp;&ensp;这里不使用脚本对从库进行初始化，而是从主库中导出数据，导入到从库中
@@ -92,7 +92,7 @@ docker exec -ti mysql_bk1 mysql --ssl-mode=DISABLED -h 192.168.101.104 -uroot -p
 # MASTER_PASSWORD：对应的用户密码
 # MASTER_LOG_FILE：在主数据库执行命令show master status 查询到的二进制日志文件名称
 # MASTER_LOG_POS：在主数据库执行命令show master status 查询到的位置 Position的值
-change master to master_host='192.168.101.104',master_user='root',master_password='root',master_log_file='mysql-bin.000001',master_log_pos=156;
+change master to master_host='192.168.101.100',master_user='root',master_password='root',master_log_file='mysql-bin.000001',master_log_pos=156;
 start slave;
 
 # 查看，大致如下，没有错误即可
