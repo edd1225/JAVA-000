@@ -1,7 +1,7 @@
-package com.mayikt.controller;
+package com.qj.week7.controller;
 
-import com.mayikt.entity.MayiktUser;
-import com.mayikt.mapper.UserMapper;
+import com.qj.week7.entity.MayiktUser;
+import com.qj.week7.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
