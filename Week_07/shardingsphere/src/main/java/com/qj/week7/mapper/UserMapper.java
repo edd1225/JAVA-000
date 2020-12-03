@@ -1,14 +1,14 @@
-package com.mayikt.mapper;
+package com.qj.week7.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.mayikt.entity.MayiktUser;
+import com.qj.week7.entity.User;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
 /**
  * @ClassName UserMapper
- * @Author 蚂蚁课堂余胜军 QQ644064779 www.mayikt.com
+ * @Author edd1225 
  * @Version V1.0
  **/
 
@@ -20,7 +20,7 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     @Select("SELECT * FROM user")
-    List<MayiktUser> userList();
+    List<User> userList();
 
     /**
      * 分页查询
@@ -28,7 +28,7 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     @Select("SELECT * FROM user limit 0,2")
-    List<MayiktUser> userListPage();
+    List<User> userListPage();
 
     /**
      * user_0 2,4 user_1 1,3
@@ -41,7 +41,7 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     @Select("SELECT * FROM user order by id desc ")
-    List<MayiktUser> userOrderBy();
+    List<User> userOrderBy();
 
     /**
      * get by id
@@ -49,5 +49,5 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     @Select("SELECT * FROM user where id =#{id} ")
-    List<MayiktUser> getByUserId(Long id);
+    List<User> getByUserId(Long id);
 }
