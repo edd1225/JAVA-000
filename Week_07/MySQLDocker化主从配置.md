@@ -1,7 +1,7 @@
 # Mysql Docker 主从配置
 ***
 
-*操作系统：Windows10 使用的MySQL8.0的docker镜像*
+*操作系统：centos 7 使用的MySQL8.0的docker镜像*
 
 ## 总览
 
