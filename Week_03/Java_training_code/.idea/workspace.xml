@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d48b6222-488c-4c30-b0e3-b4de5e5ddda5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_01/Java_training_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_01/Java_training_code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -159,17 +160,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -222,6 +212,8 @@
       <workItem from="1603288973223" duration="4042000" />
       <workItem from="1603850095166" duration="9754000" />
       <workItem from="1604472287444" duration="6675000" />
+      <workItem from="1604481276585" duration="1200000" />
+      <workItem from="1605067234274" duration="23000" />
     </task>
     <servers />
   </component>
