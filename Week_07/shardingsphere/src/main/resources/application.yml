@@ -1,0 +1,40 @@
+# 数据源 db
+sharding:
+  jdbc:
+    datasource:
+      names: db
+      # 第一个数据库
+      mayiktdb:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+        username: root
+        password: root
+    # 水平拆分的数据库（表） 配置分库 + 分表策略 行表达式分片策略
+    config:
+      sharding:
+        # 分库策略
+        #        default-database-strategy:
+        #          inline:
+        #            sharding-column: id
+        #            algorithm-expression: db
+        # 分表策略 其中mayikt_user为逻辑表 分表主要取决于id字段
+        tables:
+          mayikt_user:
+            ### mayiktdb mayikt_user_0 mayikt_user_1
+            actual-data-nodes: db.muser_$->{0..1}
+            table-strategy:
+              inline:
+                sharding-column: id
+                # 分片算法表达式 mayikt_user_1%2 mayikt_user_2%2 mayikt_user_3%2
+                algorithm-expression: user_$->{id % 2}
+
+      # 打印执行的数据库
+      props:
+        sql:
+          show: true
+
+# 打印执行的sql语句
+spring:
+  main:
+    allow-bean-definition-overriding: true
