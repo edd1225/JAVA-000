@@ -6,6 +6,8 @@
 
 Redis分布式篇 
 
+https://github.com/edd1225/JAVA-000/blob/main/Week_12/Redis%E5%88%86%E5%B8%83%E5%BC%8F.md
+
 
 
 **2.（选做）**练习示例代码里下列类中的作业题:
