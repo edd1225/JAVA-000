@@ -30,7 +30,7 @@ Github 使用教程： https://u.geekbang.org/lesson/51?article=294701
 
 来张思维导图：
 
-![](./秒杀课程知识图谱.png)
+![](./秒杀知识图谱.png)
 
 ##  秒杀主架构和流程图
 
