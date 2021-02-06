@@ -2,6 +2,7 @@
 
 **周四作业：**
 **1.（必做）**搭建 ActiveMQ 服务，基于 JMS，写代码分别实现对于 queue 和 topic 的消息生产和消费，代码提交到 github。
+Activemq Jms 简单示例.md https://github.com/edd1225/JAVA-000/blob/main/Week_13/Activemq%20Jms%20%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.md
 
 **2.（选做）**基于数据库的订单表，模拟消息队列处理订单：
 
