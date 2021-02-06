@@ -152,6 +152,14 @@ kafka：broker集群，空间换时间
 
 ## 秒杀基于 redis cache的小栗子：
 
+主要核心代码 ：https://github.com/edd1225/JAVA-000/tree/main/Week_15/redis-cache
+
+ 1、正常的主体逻辑，没有任何redis失效的防范措施
+
+ 2、防范redis缓存击穿，缓存穿透，缓存雪崩
+
+https://github.com/edd1225/JAVA-000/blob/main/Week_15/redis-cache/src/main/java/cn/qj/week15/cache/dao/service/impl/GoodsServiceImpl.java
+
 
 
 ##最后 
@@ -159,3 +167,4 @@ kafka：broker集群，空间换时间
  附上架构训练营的 秒杀笔记 https://xie.infoq.cn/article/936d81a5e4193c011ffeec6f3
 
 总结有点重复 ，方便以后查询吧！！！
+
