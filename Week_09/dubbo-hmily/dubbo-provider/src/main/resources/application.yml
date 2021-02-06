@@ -6,7 +6,7 @@ spring:
     name: dubbo-provider
 dubbo:
   scan:
-    base-packages: com.guanys.dubboprovider
+    base-packages: com.qj.week9.dubboprovider
   protocol:
     name: dubbo
     port: 55550

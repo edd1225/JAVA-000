@@ -1,10 +1,10 @@
-package com.qj.week9.dubboaccount;
+package com.qj.week9.dubboasset;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DubboAccountApplicationTests {
+class DubboAssetApplicationTests {
 
     @Test
     void contextLoads() {

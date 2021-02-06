@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.guanys.dubboasset.repository.FreezeAmountMapper">
-  <resultMap id="BaseResultMap" type="com.guanys.dubboasset.bean.FreezeAmount">
+<mapper namespace="com.qj.week9.dubboasset.repository.FreezeAmountMapper">
+  <resultMap id="BaseResultMap" type="com.qj.week9.dubboasset.bean.FreezeAmount">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="user_id" jdbcType="VARCHAR" property="userId" />
     <result column="account_id" jdbcType="BIGINT" property="accountId" />
@@ -21,13 +21,13 @@
     delete from freeze_amount
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <insert id="insert" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     insert into freeze_amount (id, user_id, account_id, 
       freeze_amount, update_time)
     values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=VARCHAR}, #{accountId,jdbcType=BIGINT}, 
       #{freezeAmount,jdbcType=DECIMAL}, #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <insert id="insertSelective" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     insert into freeze_amount
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -64,7 +64,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <update id="updateByPrimaryKeySelective" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     update freeze_amount
     <set>
       <if test="userId != null">
@@ -82,7 +82,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <update id="updateByPrimaryKey" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     update freeze_amount
     set user_id = #{userId,jdbcType=VARCHAR},
       account_id = #{accountId,jdbcType=BIGINT},
@@ -90,7 +90,7 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <resultMap id="BaseResultMap" type="com.guanys.dubboasset.bean.FreezeAmount">
+  <resultMap id="BaseResultMap" type="com.qj.week9.dubboasset.bean.FreezeAmount">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="user_id" jdbcType="VARCHAR" property="userId" />
     <result column="account_id" jdbcType="BIGINT" property="accountId" />
@@ -110,13 +110,13 @@
     delete from freeze_amount
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <insert id="insert" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     insert into freeze_amount (id, user_id, account_id,
       freeze_amount, update_time)
     values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=VARCHAR}, #{accountId,jdbcType=BIGINT},
       #{freezeAmount,jdbcType=DECIMAL}, #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <insert id="insertSelective" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     insert into freeze_amount
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -153,7 +153,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <update id="updateByPrimaryKeySelective" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     update freeze_amount
     <set>
       <if test="userId != null">
@@ -171,7 +171,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.guanys.dubboasset.bean.FreezeAmount">
+  <update id="updateByPrimaryKey" parameterType="com.qj.week9.dubboasset.bean.FreezeAmount">
     update freeze_amount
     set user_id = #{userId,jdbcType=VARCHAR},
       account_id = #{accountId,jdbcType=BIGINT},

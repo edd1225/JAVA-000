@@ -5,13 +5,13 @@ spring:
     driver-class-name:  com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
-    password:
+    password: root
   application:
     name: dubbo-demo-account
 
 
 mybatis:
-  type-aliases-package: com.guanys.dubboaccount.bean
+  type-aliases-package: com.qj.week9.dubboaccount.bean
 
 logging:
   level:
@@ -25,7 +25,7 @@ logging:
     path: "./logs"
 dubbo:
   scan:
-    base-packages: com.guanys.dubboaccount
+    base-packages: com.qj.week9.dubboaccount
   protocol:
     name: dubbo
     port: 55551

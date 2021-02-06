@@ -7,7 +7,7 @@ spring:
     web-application-type: none
 dubbo:
   scan:
-    base-packages: com.guanys.dubboconsumer
+    base-packages: com.qj.week9.dubboconsumer
   registry:
     address: zookeeper://localhost:2181
   metadata-report:

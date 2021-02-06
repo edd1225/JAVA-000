@@ -8,7 +8,7 @@
         <version>2.4.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.guanys</groupId>
+    <groupId>com.qj.week9</groupId>
     <artifactId>dubbo-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>dubbo-consumer</name>

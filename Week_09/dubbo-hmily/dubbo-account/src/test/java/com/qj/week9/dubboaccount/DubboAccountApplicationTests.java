@@ -1,4 +1,4 @@
-package com.qj.week9.dubboaccount;
+package com.guanys.dubboaccount;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
