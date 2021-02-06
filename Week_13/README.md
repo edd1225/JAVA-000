@@ -4,6 +4,8 @@
 **1.（必做）**搭建 ActiveMQ 服务，基于 JMS，写代码分别实现对于 queue 和 topic 的消息生产和消费，代码提交到 github。
 Activemq Jms 简单示例.md https://github.com/edd1225/JAVA-000/blob/main/Week_13/Activemq%20Jms%20%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.md
 
+
+
 **2.（选做）**基于数据库的订单表，模拟消息队列处理订单：
 
 - 一个程序往表里写新订单，标记状态为未处理 (status=0);
@@ -28,6 +30,12 @@ Activemq Jms 简单示例.md https://github.com/edd1225/JAVA-000/blob/main/Week_
 
 **周六作业：**
 **1.（必做）**搭建一个 3 节点 Kafka 集群，测试功能和性能；实现 spring kafka 下对 kafka 集群的操作，将代码提交到 github。
+
+
+
+
+
+
 
 **2.（选做）**安装 kafka-manager 工具，监控 kafka 集群状态。
 

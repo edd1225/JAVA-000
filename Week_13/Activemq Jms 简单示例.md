@@ -142,7 +142,7 @@ private static String QUEUE = "ws-queue";
 ```
 
 **消费者**
-```
+```java
 package cn.qj.week13.mq;
 
 import org.apache.activemq.ActiveMQConnection;
