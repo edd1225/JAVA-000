@@ -10,12 +10,7 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
-/**
- * 腾讯课堂搜索【咕泡学院】
- * 官网：www.gupaoedu.com
- * 风骚的Mic 老师
- * create-date: 2019/8/17-20:22
- */
+
 public class GpKafkaConsumer3 extends Thread{
 
     KafkaConsumer<Integer,String> consumer;
