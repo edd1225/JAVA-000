@@ -4,15 +4,15 @@
 
 **1.（选做）**自己安装和操作 RabbitMQ，RocketMQ，Pulsar，以及 Camel 和 Spring Integration。
 
-1.RabbitMQ 
+1.RabbitMQ 安装
 
-2.RocketMQ
+2.RocketMQ安装
 
-3. Pulsar   
+3.Pulsar   安装
 
-   单机
+单机
 
-   集群 +测试演练
+集群 +测试演练
 
 **2.（必做）**思考和设计自定义 MQ 第二个版本或第三个版本，写代码实现其中至少一个功能点，把设计思路和实现代码，提交到 GitHub。
 
