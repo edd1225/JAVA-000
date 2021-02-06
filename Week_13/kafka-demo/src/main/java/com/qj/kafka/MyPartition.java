@@ -8,12 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-/**
- * 腾讯课堂搜索【咕泡学院】
- * 官网：www.gupaoedu.com
- * 风骚的Mic 老师
- * create-date: 2019/8/17-21:50
- */
+
 public class MyPartition implements Partitioner {
 
     @Override
