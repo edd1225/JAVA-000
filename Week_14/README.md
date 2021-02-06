@@ -4,15 +4,15 @@
 
 **1.（选做）**自己安装和操作 RabbitMQ，RocketMQ，Pulsar，以及 Camel 和 Spring Integration。
 
-1.RabbitMQ 安装
+1.RabbitMQ 安装 [使用Docker部署RabbitMQ集群.md](https://github.com/edd1225/JAVA-000/blob/main/Week_14/使用Docker部署RabbitMQ集群.md)
 
-2.RocketMQ安装
+2.RocketMQ安装 [RocketMQ的安装与使用.md](https://github.com/edd1225/JAVA-000/blob/main/Week_14/RocketMQ的安装与使用.md)
 
 3.Pulsar   安装
 
-单机
+单机实战 [mac 下 docker 本地部署pulsar.md](https://github.com/edd1225/JAVA-000/blob/main/Week_14/mac 下 docker 本地部署pulsar.md)
 
-集群 +测试演练
+集群 +测试演练 [docker部署pulsar多节点集群.md](https://github.com/edd1225/JAVA-000/blob/main/Week_14/docker部署pulsar多节点集群.md)
 
 **2.（必做）**思考和设计自定义 MQ 第二个版本或第三个版本，写代码实现其中至少一个功能点，把设计思路和实现代码，提交到 GitHub。
 
