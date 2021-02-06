@@ -10,7 +10,7 @@
 
 3.Pulsar   安装
 
-单机实战 [mac 下 docker 本地部署pulsar.md](https://github.com/edd1225/JAVA-000/blob/main/Week_14/mac 下 docker 本地部署pulsar.md)
+单机实战 [mac 下 docker 本地部署pulsar.md](https://github.com/edd1225/JAVA-000/blob/main/Week_14/docker 本地部署pulsar.md)
 
 集群 +测试演练 [docker部署pulsar多节点集群.md](https://github.com/edd1225/JAVA-000/blob/main/Week_14/docker部署pulsar多节点集群.md)
 
