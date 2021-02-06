@@ -13,12 +13,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * 腾讯课堂搜索【咕泡学院】
- * 官网：www.gupaoedu.com
- * 风骚的Mic 老师
- * create-date: 2019/8/17-20:22
- */
+
 public class GpKafkaConsumer2 extends Thread{
 
     KafkaConsumer<Integer,String> consumer;
