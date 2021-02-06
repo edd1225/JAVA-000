@@ -7,12 +7,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-/**
- * 腾讯课堂搜索【咕泡学院】
- * 官网：www.gupaoedu.com
- * 风骚的Mic 老师
- * create-date: 2019/8/17-20:22
- */
+
 public class GpKafkaProducer extends Thread{
 
     //producer api
