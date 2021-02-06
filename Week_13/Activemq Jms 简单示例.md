@@ -426,7 +426,8 @@ queue: ws-query-test
 ```
 
 ```java
-#### 使用配置的方式注入消息队列名称 @Configuration
+#### 使用配置的方式注入消息队列名称 
+@Configuration
 package cn.qj.week13.mq.demo.config;
 
 import org.apache.activemq.command.ActiveMQQueue;
