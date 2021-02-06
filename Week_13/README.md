@@ -34,11 +34,13 @@ Activemq Jms 简单示例.md https://github.com/edd1225/JAVA-000/blob/main/Week_
 
 ###  周六作业：
 ## 1.（必做）搭建一个 3 节点 Kafka 集群，测试功能和性能；实现 spring kafka 下对 kafka 集群的操作，将代码提交到 github。
+Java Kafka 简单示例.md
+https://github.com/edd1225/JAVA-000/blob/main/Week_13/Java%20Kafka%20%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B.md
 
+代码 ：
+https://github.com/edd1225/JAVA-000/tree/main/Week_13/kafka-demo
 
-
-
-
+https://github.com/edd1225/JAVA-000/tree/main/Week_13/kafka
 
 
 ## 2.（选做）安装 kafka-manager 工具，监控 kafka 集群状态。
