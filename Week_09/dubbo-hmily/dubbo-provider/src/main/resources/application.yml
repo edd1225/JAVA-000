@@ -1,0 +1,17 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: dubbo-provider
+dubbo:
+  scan:
+    base-packages: com.guanys.dubboprovider
+  protocol:
+    name: dubbo
+    port: 55550
+  registry:
+    address: zookeeper://localhost:2181
+  metadata-report:
+    address: zookeeper://localhost:2181
+
