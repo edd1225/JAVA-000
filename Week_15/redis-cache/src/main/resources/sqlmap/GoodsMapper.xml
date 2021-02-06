@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.qj.week15.cache.dao.GoodsMapper">
+    <select id="getGoodsById" parameterType="int" resultType="cn.qj.week15.cache.dao.entry.Goods">
+     select goods_id as goodsId, goods_name as goodsName,price,category from t_goods g where g.goods_id=#{goodsId}
+    </select>
+
+    <select id="selectGoodsIds" resultType="int">select goods_id from t_goods</select>
+</mapper>

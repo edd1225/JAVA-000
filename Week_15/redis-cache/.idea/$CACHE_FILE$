@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/cas-overlay-template-master" value="PREVIEW" />
+        <entry key="$USER_HOME$/developer_tools/opensource/spring-framework-5.0.2.RELEASE" value="PREVIEW" />
+        <entry key="$USER_HOME$/developer_tools/opensource/spring-framework-5.0.x" value="PREVIEW" />
+        <entry key="$USER_HOME$/developer_tools/opensource/spring-framework-5.1.x" value="PREVIEW" />
+        <entry key="$USER_HOME$/git/spring_cloud_oauth2" value="PREVIEW" />
+        <entry key="$USER_HOME$/test/cim/cim_for_netty/cim-boot-server" value="PREVIEW" />
+        <entry key="$USER_HOME$/test/spring-kafka" value="PREVIEW" />
+        <entry key="$USER_HOME$/tmp/UniAuth" value="PREVIEW" />
+        <entry key="$USER_HOME$/tmp/cas-overlay-template" value="PREVIEW" />
+        <entry key="$USER_HOME$/城云科技/统一认证项目/cas-master" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+</project>
